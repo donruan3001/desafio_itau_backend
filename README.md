@@ -20,7 +20,27 @@ A aplicação gerencia transações financeiras e fornece estatísticas em tempo
 - **Jakarta Validation**
 
 ## Estrutura do Projeto
-src/ ├── main/ │ ├── java/ │ │ └── com/itau/itau/ │ │ ├── controllers/ # Controladores REST │ │ ├── domain/ # Modelos de domínio │ │ ├── exception/ # Tratamento de exceções │ │ └── service/ # Lógica de negócios │ └── resources/ │ └── application.properties # Configurações da aplicação ├── test/ │ └── java/ │ └── com/itau/itau/ # Testes unitários
+## Estrutura do Projeto
+
+```plaintext
+src/
+├── main/
+│   ├── java/
+│   │   └── com/
+│   │       └── itau/
+│   │           └── itau/
+│   │               ├── controllers/    # Controladores REST
+│   │               ├── domain/         # Modelos de domínio
+│   │               ├── exception/      # Tratamento de exceções
+│   │               └── service/        # Lógica de negócios
+│   └── resources/
+│       └── application.properties      # Configurações da aplicação
+├── test/
+│   └── java/
+│       └── com/
+│           └── itau/
+│               └── itau/              # Testes unitários
+
 
 ## Endpoints
 
