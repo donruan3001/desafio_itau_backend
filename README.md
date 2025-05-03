@@ -34,11 +34,12 @@ A aplicação gerencia transações financeiras e fornece estatísticas em tempo
 -    └── java/ 
 -    ── com/itau/itau/ # Testes unitários
 
+
 ## Endpoints
 
 ### 1. Criar Transação
 - **URL**: `/transacao`
-- **Método**: `POST`
+-- ****Método****: `POST`
 - **Request Body**:
   ```json
   {
@@ -50,42 +51,51 @@ A aplicação gerencia transações financeiras e fornece estatísticas em tempo
 
     201 Created: Transação criada com sucesso.
     422 Unprocessable Entity: Valor inválido ou data futura.
-2. Consultar Estatísticas
-    URL: /estatistica
-    Método: GET
+### 2. Consultar Estatísticas
+-    **URL**: /estatistica
+-    **Método**: GET
+    Respostas: 
+    200 OK: 
+### 3. Remover Transações
+-    **URL:** /transacao
+-    **Método**: DELETE
     Respostas:
-3. Remover Transações
-    URL: /transacao
-    Método: DELETE
-    Respostas:
-        200 OK: Todas as transações foram removidas.
-Configuração e Execução
-    Pré-requisitos
+        200 OK
 
-    Java 21 instalado.
-    Maven configurado no ambiente.
 
-Passos para executar
 
-Clone o repositório:
+## Configuração e Execução
+-    Pré-requisitos
 
+   - Java 21 instalado.
+   - Maven configurado no ambiente.
+
+### Passos para executar
+
+
+
+- **Clone o Repositório**
+
+```
 git clone <URL_DO_REPOSITORIO>
 cd itau
+```
 
-Compile o projeto:
-./mvnw clean install
+ **Compile o projeto:**
 
-Execute a aplicação:
-./mvnw spring-boot:run
+`./mvnw clean install`
+
+**Execute a aplicação:**
+`./mvnw spring-boot:run`
 
 A aplicação estará disponível em http://localhost:8080.
 
-Testes
+### Testes
 Para executar os testes unitários, utilize o comando:
 
-./mvnw test
+`./mvnw test`
 
-Tratamento de Exceções
+### Tratamento de Exceções
 
 400 Bad Request: Erros de validação no corpo da requisição.
 422 Unprocessable Entity: Transações com valores inválidos.
