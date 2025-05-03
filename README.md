@@ -71,4 +71,5 @@ Aplicação Java (Spring Boot) empacotada em Docker.
 
 ```
 //caso queira fazer o build da imagem
-docker build -t ruan123/desafio-itau-backend .```
+docker build -t ruan123/desafio-itau-backend .
+```
