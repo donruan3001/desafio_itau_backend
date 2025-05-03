@@ -2,7 +2,8 @@
 
 ## Descrição
 
-Este projeto é uma API RESTful desenvolvida em Java utilizando o framework Spring Boot. A aplicação gerencia transações financeiras e fornece estatísticas em tempo real sobre as transações realizadas nos últimos 60 segundos.
+Este projeto é um desfaio feito por este repositório caso queira replicar https://github.com/rafaellins-itau/desafio-itau-vaga-99-junior
+A aplicação gerencia transações financeiras e fornece estatísticas em tempo real sobre as transações realizadas nos últimos 60 segundos.
 
 ## Funcionalidades
 
