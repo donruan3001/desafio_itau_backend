@@ -1,6 +1,7 @@
 package com.itau.itau.controllers;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -26,6 +27,11 @@ private StorageTransaction storageTransaction;
         storageTransaction.getEstatistica();
         return ResponseEntity.ok().build();
 }
+@DeleteMapping("/transacao")
+    public ResponseEntity deleteTransactions(){
+        storageTransaction.removeTransaction();
+        return ResponseEntity.ok().build();
 
+    }
 
 }
