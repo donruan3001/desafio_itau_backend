@@ -64,9 +64,9 @@ Aplicação Java (Spring Boot) empacotada em Docker.
 
 ## 🐳 Como usar esta imagem
 
-
+- **Instalar a imagem**
 `docker pull donruan3001/desafio-itau-backend`
-
+- **Rodar o docker**
 `docker run -p donruan3001/desafio-itau-backend`
 
 ```
