@@ -62,40 +62,19 @@ A aplicação gerencia transações financeiras e fornece estatísticas em tempo
     Respostas:
         200 OK
 
+# 📦 desafio-itau-backend
+
+Aplicação Java (Spring Boot) empacotada em Docker.
+
+---
+
+## 🐳 Como usar esta imagem
+
+```bash
+docker pull donruan3001/desafio-itau-backend
+docker run -p donruan3001/desafio-itau-backend
+
+//caso queira fazer o build da imagem
+docker build -t ruan123/desafio-itau-backend .
 
 
-## Configuração e Execução
--    Pré-requisitos
-
-   - Java 21 instalado.
-   - Maven configurado no ambiente.
-
-### Passos para executar
-
-
-
-- **Clone o Repositório**
-
-```
-git clone <URL_DO_REPOSITORIO>
-cd itau
-```
-
- **Compile o projeto:**
-
-`./mvnw clean install`
-
-**Execute a aplicação:**
-`./mvnw spring-boot:run`
-
-A aplicação estará disponível em http://localhost:8080.
-
-### Testes
-Para executar os testes unitários, utilize o comando:
-
-`./mvnw test`
-
-### Tratamento de Exceções
-
-400 Bad Request: Erros de validação no corpo da requisição.
-422 Unprocessable Entity: Transações com valores inválidos.
