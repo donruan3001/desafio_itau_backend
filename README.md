@@ -56,25 +56,19 @@ Configuração e Execução
 
 Passos para executar
 
-Clone o repositório:
+# 📦 desafio-itau-backend
 
-git clone <URL_DO_REPOSITORIO>
-cd itau
+Aplicação Java (Spring Boot) empacotada em Docker.
 
-Compile o projeto:
-./mvnw clean install
+---
 
-Execute a aplicação:
-./mvnw spring-boot:run
+## 🐳 Como usar esta imagem
 
-A aplicação estará disponível em http://localhost:8080.
 
-Testes
-Para executar os testes unitários, utilize o comando:
+`docker pull donruan3001/desafio-itau-backend`
 
-./mvnw test
+`docker run -p donruan3001/desafio-itau-backend`
 
-Tratamento de Exceções
-
-400 Bad Request: Erros de validação no corpo da requisição.
-422 Unprocessable Entity: Transações com valores inválidos.
+```
+//caso queira fazer o build da imagem
+docker build -t ruan123/desafio-itau-backend .```
