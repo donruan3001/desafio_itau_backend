@@ -1,4 +1,4 @@
-package com.itau.service;
+package com.itau.itau.service;
 
 import java.time.OffsetDateTime;
 import java.util.ArrayList;
@@ -31,10 +31,11 @@ public class StorageTransaction {
 
     public Estatistica getEstatistica() {
         OffsetDateTime agora = OffsetDateTime.now();
-        OffsetDateTime limite=agora.with(agora.minusNanos(60));
+       OffsetDateTime limite = agora.minusMinutes(60);
+
 
        //FIltrar transações dos ultimos 60 segundos e um cast de list para TransacaoDTO
-       List<TransacaoDTO> transacoesRecentes = (List<TransacaoDTO>) transacoes.stream()
+       List<TransacaoDTO> transacoesRecentes = transacoes.stream()
        .filter(t->t.dataHora().isAfter(limite))
        .toList();
        

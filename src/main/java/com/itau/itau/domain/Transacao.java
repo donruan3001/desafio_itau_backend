@@ -26,8 +26,7 @@ public Transacao(boolean valor, OffsetDateTime dataHora) {
     this.valor = valor;
     this.dataHora = dataHora;
 }
-public Transacao() {
-}
+
 
 
 
